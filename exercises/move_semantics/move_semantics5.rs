@@ -11,7 +11,7 @@ fn main() {
     let mut x = 100;
     let y = &mut x;
     *y += 100;
-    let z = &mut x;
+    let z = &mut x; // now x =1100
     *z += 1000;
     assert_eq!(x, 1200);
 }

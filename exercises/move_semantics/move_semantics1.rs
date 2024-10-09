@@ -7,7 +7,7 @@
 fn main() {
     let vec0 = Vec::new();
 
-    let mut vec1 = fill_vec(vec0);
+    let mut vec1 = fill_vec(vec0); //通过move_semantics初始化了一个新的mutable vec
 
     println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
 
